@@ -1,8 +1,3 @@
-# Credentials / secrets
-credentials.json
-metadata.json
-tmp/
-
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
@@ -13,7 +8,6 @@ __pycache__/
 
 # Distribution / packaging
 .Python
-build/
 develop-eggs/
 dist/
 downloads/
@@ -96,19 +90,13 @@ ipython_config.py
 #   install all needed dependencies.
 #Pipfile.lock
 
-# PEP 582; used by e.g. github.com/David-OConnor/pyflow
-__pypackages__/
-
-# Celery stuff
+# celery beat schedule file
 celerybeat-schedule
-celerybeat.pid
 
 # SageMath parsed files
 *.sage.py
 
 # Environments
-config.env
-config.json
 .env
 .venv
 env/
@@ -134,9 +122,3 @@ dmypy.json
 
 # Pyre type checker
 .pyre/
-
-# VS Code
-.vscode/
-
-# mac DS_STORE
-.DS_Store
