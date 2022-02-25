@@ -24,7 +24,7 @@ import src.functions.tests
 
 colorama.init()
 print(
-    "====================================================\n\033[96m               Dester - LibDrive - v1\033[94m\n             @eliasbenb - @AlkenDester\033[0m\n====================================================\n"
+    "====================================================\n\033[96m               Server - LibDrive - v1\033[94m\n             @eliasbenb - @AlkenServer\033[0m\n====================================================\n"
 )
 
 print("\033[32mREADING CONFIG...\033[0m")
@@ -119,7 +119,7 @@ def threaded_metadata():
                 {
                     "code": 500,
                     "content": None,
-                    "message": "Dester - LibDrive is already building metadata, please wait.",
+                    "message": "Server - LibDrive is already building metadata, please wait.",
                     "success": False,
                 },
                 500,
@@ -204,17 +204,17 @@ def create_app():
                 pass
         else:
             try:
-                soup.find("meta", {"id": "@ld-meta-og-title"})["content"] = "Dester - Libdrive"
+                soup.find("meta", {"id": "@ld-meta-og-title"})["content"] = "Server - Libdrive"
             except:
                 pass
             try:
                 soup.find("meta", {"id": "@ld-meta-og-site_name"})[
                     "content"
-                ] = "Dester - Libdrive"
+                ] = "Server - Libdrive"
             except:
                 pass
             try:
-                soup.find("title", {"id": "@ld-title"}).string = "Dester - Libdrive"
+                soup.find("title", {"id": "@ld-title"}).string = "Server - Libdrive"
             except:
                 pass
         if (
