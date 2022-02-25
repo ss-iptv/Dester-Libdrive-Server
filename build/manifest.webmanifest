@@ -1,6 +1,6 @@
 {
-  "name": "Server - Libdrive",
-  "short_name": "Server - Libdrive",
+  "name": "Server - Drive",
+  "short_name": "Server - Drive",
   "theme_color": "#4197fe",
   "background_color": "#111111",
   "display": "standalone",

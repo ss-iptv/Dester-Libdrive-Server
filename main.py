@@ -24,7 +24,7 @@ import src.functions.tests
 
 colorama.init()
 print(
-    "====================================================\n\033[96m               Server - LibDrive - v1\033[94m\n             @eliasbenb - @AlkenServer\033[0m\n====================================================\n"
+    "====================================================\n\033[96m               Server - Drive - v1\033[94m\n             @eliasbenb - @AlkenServer\033[0m\n====================================================\n"
 )
 
 print("\033[32mREADING CONFIG...\033[0m")
@@ -119,7 +119,7 @@ def threaded_metadata():
                 {
                     "code": 500,
                     "content": None,
-                    "message": "Server - LibDrive is already building metadata, please wait.",
+                    "message": "Server - Drive is already building metadata, please wait.",
                     "success": False,
                 },
                 500,
@@ -140,7 +140,7 @@ def threaded_metadata():
         {
             "code": 200,
             "content": None,
-            "message": "libDrive is building your new metadata.",
+            "message": "Drive is building your new metadata.",
             "success": True,
         },
         200,
@@ -204,17 +204,17 @@ def create_app():
                 pass
         else:
             try:
-                soup.find("meta", {"id": "@ld-meta-og-title"})["content"] = "Server - Libdrive"
+                soup.find("meta", {"id": "@ld-meta-og-title"})["content"] = "Server - Drive"
             except:
                 pass
             try:
                 soup.find("meta", {"id": "@ld-meta-og-site_name"})[
                     "content"
-                ] = "Server - Libdrive"
+                ] = "Server - Drive"
             except:
                 pass
             try:
-                soup.find("title", {"id": "@ld-title"}).string = "Server - Libdrive"
+                soup.find("title", {"id": "@ld-title"}).string = "Server - Drive"
             except:
                 pass
         if (

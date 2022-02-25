@@ -68,7 +68,7 @@ def cloudflare_test(config):
             )
             sys.exit()
         res = requests.get(config.get("cloudflare")).text
-        if not res.startswith("libDrive"):
+        if not res.startswith("Drive"):
             print(
                 "\033[31mERROR! YOUR WEB HOSTED CLOUDFLARE DEPLOYMENT IS NOT RETURNING A VALID RESPONSE! MAKE SURE IT IS CORRECTLY CONFIGURED!\033[0m"
             )
@@ -76,7 +76,7 @@ def cloudflare_test(config):
     elif config.get("cloudflare") == "local":
         try:
             res = requests.get("http://localhost:31146").text
-            if not res.startswith("libDrive"):
+            if not res.startswith("Drive"):
                 print(
                     "\033[31mERROR! YOUR LOCALLY HOSTED CLOUDFLARE DEPLOYMENT IS NOT RETURNING A VALID RESPONSE! MAKE SURE IT IS CORRECTLY CONFIGURED!\033[0m"
                 )
@@ -90,7 +90,7 @@ def cloudflare_test(config):
         try:
             res = requests.get("http://localhost:31146").text
             if res:
-                if res.startswith("libDrive"):
+                if res.startswith("Drive"):
                     print(
                         "\033[33mA LOCALLY HOSTED CLOUDFLARE WORKER WAS FOUND, IT WILL BE USED INSTEAD.\033[0m"
                     )

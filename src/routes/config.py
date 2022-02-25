@@ -53,7 +53,7 @@ async def configFunction():
                     {
                         "code": 200,
                         "content": None,
-                        "message": "Server - Libdrive is updating your config",
+                        "message": "Server - Drive is updating your config",
                         "success": True,
                     }
                 ),
